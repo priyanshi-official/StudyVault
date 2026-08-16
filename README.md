@@ -28,30 +28,6 @@ StudyVault is a React-based study productivity application designed to help stud
 - **Vite**
 - **LocalStorage**
 
-## 📂 Project Structure
-
-```text
-src/
-├── assets/
-├── components/
-│   ├── Navbar.jsx
-│   └── PrivateNavbar.jsx
-├── layouts/
-│   ├── PublicLayout.jsx
-│   └── PrivateLayout.jsx
-├── pages/
-│   ├── About.jsx
-│   ├── Dashboard.jsx
-│   ├── Landing.jsx
-│   ├── Login.jsx
-│   ├── Notes.jsx
-│   ├── Planner.jsx
-│   ├── Register.jsx
-│   └── Resources.jsx
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
 
 ## 🚀 Getting Started
 1. Clone the repository
@@ -82,7 +58,28 @@ The application contains public pages such as Landing, Login and Register, along
 - Improved mobile responsiveness
 - Notifications and reminders
 
-### 👩‍💻 Project
 
-This project was created as a React learning  to practice component-based development, routing, state management, CRUD operations, and browser storage.
+## 📂 Project Structure
 
+```text
+src/
+├── assets/
+├── components/
+│   ├── Navbar.jsx
+│   └── PrivateNavbar.jsx
+├── layouts/
+│   ├── PublicLayout.jsx
+│   └── PrivateLayout.jsx
+├── pages/
+│   ├── About.jsx
+│   ├── Dashboard.jsx
+│   ├── Landing.jsx
+│   ├── Login.jsx
+│   ├── Notes.jsx
+│   ├── Planner.jsx
+│   ├── Register.jsx
+│   └── Resources.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
