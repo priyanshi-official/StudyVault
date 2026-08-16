@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="capGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#79D8FF"></stop>
+      <stop offset="100%" stop-color="#3B4DFF"></stop>
+    </linearGradient>
+
+    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A6E6FF"></stop>
+      <stop offset="100%" stop-color="#4C74FF"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Glow -->
+  <ellipse cx="256" cy="360" rx="130" ry="22" fill="#7FD8FF" opacity="0.18"></ellipse>
+
+  <!-- Top Cap -->
+  <polygon points="256,80 420,160 256,240 92,160" fill="url(#capGradient)" filter="url(#glow)"></polygon>
+
+  <!-- White Highlight -->
+  <polygon points="256,92 390,157 256,220 122,157" fill="white" opacity="0.15"></polygon>
+
+  <!-- Bottom -->
+  <path d="M150 182
+         L150 285
+         Q256 360 362 285
+         L362 182" fill="url(#baseGradient)"></path>
+
+  <!-- Tassel -->
+  <line x1="420" y1="160" x2="420" y2="275" stroke="#2F47FF" stroke-width="10" stroke-linecap="round"></line>
+
+  <circle cx="420" cy="288" r="15" fill="#6FD6FF"></circle>
+
+</svg>

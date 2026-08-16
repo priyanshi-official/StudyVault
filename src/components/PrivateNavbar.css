@@ -1,0 +1,57 @@
+.privateNavbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin:  15px 60px;
+    border-radius: 20px;
+    box-shadow: 0 2px 7px skyblue;
+    padding: 0px 50px;
+}
+
+.privatenav-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.privatenav-left img{
+    width: 100px;
+    height: 75px;
+    margin: 10px -10px 10px 10px;
+}
+
+.privatenav-left h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(18, 18, 67);
+    line-height: 1;
+}
+
+.privatenav-left h1 .accent{
+    color: skyblue;
+}
+
+.privatenav-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.privatenav-right .option{
+    color: rgb(18, 18, 67);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.privatenav-right .option:hover{
+    color: skyblue;
+    transition: 0.1s;
+}

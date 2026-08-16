@@ -1,0 +1,103 @@
+.login{
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#f5f9ff,#eaf4ff);
+}
+
+.login-left img{
+    height: 70vh;
+    width: 80%;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.login-right{
+    width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-right h2{
+    color: rgb(18,18,67);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-right h3{
+    color: rgb(18,18,67);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    color: rgb(18,18,67);
+    font-weight: 600;
+}
+
+.inp{
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 2px solid #e3edf7;
+    background: #f8fbff;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.inp:focus{
+    outline: none;
+    border-color: skyblue;
+    box-shadow: 0 0 0 4px rgba(135,206,235,0.25);
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+    margin-top: -12px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.login_btn{
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+    background: linear-gradient(135deg,skyblue,rgb(18,18,67));
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.login_btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(18,18,67,0.3);
+}
+
+.signup-text{
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.signup-link{
+    color: rgb(18,18,67);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link:hover{
+    color: skyblue;
+}
