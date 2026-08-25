@@ -2,18 +2,18 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
-import Landing from "./Pages/Landing.jsx";
-import Login from "./Pages/Login.jsx";
-import Register from "./Pages/Register.jsx";
+import Landing from "./pages/Landing.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 
 import PrivateLayout from "./layouts/PrivateLayout.jsx";
 import PublicLayout from "./layouts/PublicLayout.jsx";
 
-import Dashboard from "./Pages/Dashboard.jsx";
-import About from "./Pages/About.jsx";
-import Notes from "./Pages/Notes.jsx";
-import Planner from "./Pages/Planner.jsx";
-import Resources from "./Pages/Resources.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import About from "./pages/About.jsx";
+import Notes from "./pages/Notes.jsx";
+import Planner from "./pages/Planner.jsx";
+import Resources from "./pages/Resources.jsx";
 
 
 const App = () => {
