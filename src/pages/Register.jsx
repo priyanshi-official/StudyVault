@@ -58,24 +58,21 @@ const Register = () => {
                 <input type="text" name="username" id="username" className='inp' placeholder='Enter your Username'
                 value={username} onChange={(e)=>{
                   setUsername(e.target.value)
-                  setUsernameError("")
-                }}/>
+                  setUsernameError("")}}/>
                 <p className='error'>{usernameError}</p>
 
                 <label htmlFor="email">Email Address</label>
                 <input type="email" name="email" id="email" className='inp' placeholder='Enter your Email Address'
                 value={email}  onChange={(e)=>{
                   setEmail(e.target.value)
-                  setEmailError("")
-                }}/>
+                  setEmailError("")}}/>
                 <p className='error'>{emailError}</p>
 
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" id="password" className='inp' placeholder='Enter your Password' 
                 value={password} onChange={(e)=>{
                   setPassword(e.target.value)
-                  setPasswordError("")
-                }}/>
+                  setPasswordError("")}}/>
                 <p className='error'>{passwordError}</p>
     
                 <input type="submit" value="Register" className='register_btn'/>

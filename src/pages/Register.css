@@ -95,3 +95,51 @@ label{
 .login-link:hover{
     color: skyblue;
 }
+
+
+@media (max-width: 600px){
+
+    .register{
+        min-height: calc(100vh - 80px);
+        padding: 30px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .register-left{
+        display: none;
+    }
+
+    .register-right{
+        width: 100%;
+        max-width: 420px;
+        padding: 28px 22px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .register-right h2{
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .register-right h5{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .inp{
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .register_btn{
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .login-text{
+        font-size: 14px;
+    }
+}

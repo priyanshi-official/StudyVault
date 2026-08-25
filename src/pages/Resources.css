@@ -298,3 +298,143 @@
     color:#38bdf8;
     font-weight:bold;
 }
+
+
+@media (max-width: 600px){
+
+    .resource-page{
+        margin: 10px;
+        min-height: calc(100vh - 20px);
+    }
+
+    .resources-container{
+        padding: 25px 15px;
+    }
+
+    .resources-header{
+        margin-bottom: 25px;
+    }
+
+    .resources-header h1{
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .resources-header p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .resource-tabs{
+        padding: 20px 15px;
+        border-radius: 18px;
+        margin-bottom: 25px;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .resource-tabs h4{
+        width: 100%;
+        flex: none;
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 5px;
+    }
+
+    .resource-tabs button{
+        flex: 1;
+        margin-left: 0;
+        padding: 12px 10px;
+        font-size: 14px;
+        min-width: 0;
+    }
+
+    .video-section,
+    .pdf-section{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .video-card,
+    .pdf-card{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px;
+        margin-bottom: 5px;
+        border-radius: 17px;
+    }
+
+    .video-content,
+    .pdf-content{
+        gap: 15px;
+    }
+
+    .video-content h3,
+    .pdf-content h3{
+        font-size: 19px;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+
+    .resource-actions{
+        gap: 10px;
+    }
+
+    .watch-btn,
+    .open-btn{
+        padding: 10px 15px;
+        font-size: 14px;
+        width: fit-content;
+    }
+
+    .delete-resource{
+        width: 38px;
+        height: 38px;
+        padding: 9px;
+        flex-shrink: 0;
+    }
+
+    .modal-container{
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .modal{
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        padding: 22px 18px;
+        border-radius: 18px;
+        gap: 12px;
+    }
+
+    .modal h2{
+        font-size: 22px;
+    }
+
+    .modal label{
+        font-size: 14px;
+    }
+
+    .modal input{
+        padding: 11px 12px;
+        font-size: 14px;
+    }
+
+    .modal-buttons{
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .cancel-btn,
+    .save-btn{
+        padding: 10px 16px;
+    }
+
+    .footer{
+        padding: 18px 10px;
+        font-size: 13px;
+    }
+
+}

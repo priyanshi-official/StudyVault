@@ -60,8 +60,6 @@ const Dashboard = () => {
   }
 
 
-
-  // Load User
   useEffect(() => {
     const savedUser = JSON.parse(localStorage.getItem("user"));
     if (savedUser) {
@@ -69,12 +67,12 @@ const Dashboard = () => {
     }
   }, []);
 
-  // Save Study Time
+
   useEffect(() => {
     localStorage.setItem("studyTime", studyTime);
   }, [studyTime]);
 
-  // Cleanup Timer
+
   useEffect(() => {
     return () => {
       clearInterval(intervalRef.current);

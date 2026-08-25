@@ -5,18 +5,18 @@ import { useState } from 'react'
 import {useEffect} from "react";
 
 const Notes = () => {
-  const [showCard, setShowCard] = useState(false)   //model open/close
+  const [showCard, setShowCard] = useState(false)  
 
-  const [title, setTitle] = useState("")  //Title input
-  const [subject, setSubject] = useState("")    //Subject input
-  const [description, setDescription] = useState("")   //descrption input
+  const [title, setTitle] = useState("")  
+  const [subject, setSubject] = useState("")    
+  const [description, setDescription] = useState("")   
 
-  const [notes, setNotes] = useState([]);   //Saare notes array mai store
-  const [editIndex,setEditIndex]=useState(null);  // Kaunsa note edit karna hai id ke basis pe
-  const [search,setSearch]=useState("");  // Search text
+  const [notes, setNotes] = useState([]);   
+  const [editIndex,setEditIndex]=useState(null);  
+  const [search,setSearch]=useState("");  
 
-  const [selectedSubject, setSelectedSubject] = useState("All");  // Subject filter
-  const [showImportant, setShowImportant] = useState(false);   //Important filter
+  const [selectedSubject, setSelectedSubject] = useState("All"); 
+  const [showImportant, setShowImportant] = useState(false); 
 
 
   function displayModal() {
@@ -88,14 +88,14 @@ const Notes = () => {
     setShowCard(false);
 }
 
-//Marking as improtant , toggle the note
+
  function toggleImportant(id) {
     const updatedNotes = notes.map(note => note.id === id ? { ...note, important: !note.important } : note);
     setNotes(updatedNotes);
 }
 
 
-//Delete note
+
   function deleteNote(id) {
     if(!window.confirm("Delete this note?")) 
         return;
@@ -104,20 +104,18 @@ const Notes = () => {
 }
 
 
-//load notes
     useEffect(()=>{
     const savedNotes=JSON.parse(localStorage.getItem("notes"));
     if(savedNotes){
     setNotes(savedNotes);
     }
     },[]);
-//Save Notes
+
     useEffect(()=>{
     localStorage.setItem("notes",JSON.stringify(notes));
     },[notes]);
 
 
-//Edit notes
 function editNote(id) {
     const note = notes.find(note => note.id === id);
     if (!note) 
@@ -131,12 +129,10 @@ function editNote(id) {
 }
 
 
-// for making the subject option and important 
 const subjects = [...new Set(notes.map(note => note.subject))];
 const hasImportant = notes.some(note => note.important);
 
 
-//main return 
   return (
     <div className="notes-container">
 
